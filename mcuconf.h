@@ -34,6 +34,7 @@
 #define STM32L4xx_MCUCONF
 #define STM32L476_MCUCONF
 #define STM32L486_MCUCONF
+#define STM32L431_MCUCONF
 
 /*
  * HAL driver system settings.
@@ -42,7 +43,12 @@
 #define STM32_VOS                           STM32_VOS_RANGE1
 #define STM32_PVD_ENABLE                    FALSE
 #define STM32_PLS                           STM32_PLS_LEV0
+#ifdef HW_MCU_STM32L431
+#define STM32_HSI16_ENABLED                 TRUE
+#else
 #define STM32_HSI16_ENABLED                 FALSE
+#endif
+
 #define STM32_LSI_ENABLED                   FALSE
 #define STM32_HSE_ENABLED                   FALSE
 #define STM32_LSE_ENABLED                   TRUE

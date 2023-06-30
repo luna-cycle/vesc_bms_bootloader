@@ -43,11 +43,11 @@
 #define STM32_VOS                           STM32_VOS_RANGE1
 #define STM32_PVD_ENABLE                    FALSE
 #define STM32_PLS                           STM32_PLS_LEV0
-#ifdef HW_MCU_STM32L431
+//#ifdef HW_MCU_STM32L431
 #define STM32_HSI16_ENABLED                 TRUE
-#else
-#define STM32_HSI16_ENABLED                 FALSE
-#endif
+//#else
+//#define STM32_HSI16_ENABLED                 FALSE
+//#endif
 
 #define STM32_LSI_ENABLED                   FALSE
 #define STM32_HSE_ENABLED                   FALSE

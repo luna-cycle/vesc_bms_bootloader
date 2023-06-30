@@ -60,11 +60,11 @@
 /*
  * MCU type as defined in the ST header.
  */
-#ifdef HW_MCU_STM32L431
+//#ifdef HW_MCU_STM32L431
 #define STM32L431xx
-#else
-#define STM32L476xx
-#endif
+//#else
+//#define STM32L476xx
+//#endif
 
 /*
  * IO pins assignments.
